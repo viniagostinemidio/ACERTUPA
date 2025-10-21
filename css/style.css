@@ -1,7 +1,8 @@
 /* Reset básico para remover margens e preenchimentos padrão do navegador */
 body, ul {
-    margin: 0;
-    padding: 0;
+    margin: 12;
+    padding: 12;
+    box-sizing: border-box;
 }
 
 /* ======================================= */
@@ -9,6 +10,8 @@ body, ul {
 /* ======================================= */
 
 #inicio {
+    /* Compensa o padding do body */
+    margin: -12px;
     /* Altura e posicionamento */
     height: 70vh; /* Ocupa 70% da altura da tela */
     position: relative; /* ESSENCIAL: para posicionar os filhos (fundo e texto) dentro dele */
@@ -139,12 +142,14 @@ nav a:hover {
     text-transform: uppercase; /* Deixa o texto em maiúsculas */
     letter-spacing: 2px; /* Adiciona um pequeno espaço entre as letras */
     font-family: Arial, sans-serif;
+    margin: -12px; /* Compensa o padding do body */
 }
 
 /* Estilo da Seção de Cursos/Departamentos */
 #cursos {
     padding: 40px 20px; /* Adiciona um respiro nas laterais e na vertical */
     background-color: #f9f9f9; /* Um fundo levemente cinza para destacar os cartões */
+    margin: -12px; /* Compensa o padding do body */
 }
 
 .cursos-grid {
@@ -179,6 +184,7 @@ nav a:hover {
     margin: 0; /* Remove a margem padrão do h3 */
     padding: 20px; /* Adiciona um espaçamento interno para o texto */
     font-family: Arial, sans-serif;
+    text-align: center;
 }
 
 /* ======================================= */
