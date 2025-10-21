@@ -532,4 +532,23 @@ nav a:hover {
     display: block;         /* 1. Transforma a imagem em um "bloco" */
     margin-left: auto;      /* 2. Cria margem automática à esquerda */
     margin-right: auto;     /* 3. Cria margem automática à direita */
+    margin: -12px; /* Compensa o padding do body */
+}
+
+.secao-destaque {
+    /* 1. Garante que o bloco nunca seja maior que a área visível */
+    max-width: 100%;
+    
+    /* 2. Adiciona um preenchimento interno para o conteúdo respirar e não tocar nas bordas */
+    padding: 20px; 
+    
+    /* 3. Previne barras de rolagem horizontais indesejadas */
+    overflow-x: hidden; 
+    
+    /* 4. (Opcional) Define uma largura ideal para desktops, mas não mais que 100% */
+    width: 90%; 
+    
+    /* 5. (Opcional) Centraliza o bloco na página */
+    margin-left: auto;
+    margin-right: auto;
 }

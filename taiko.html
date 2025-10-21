@@ -5,7 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACERT - Departamento de Taiko</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Pequena margem apenas para os textos */
+        .departamento-texto {
+            margin: 0 20px;
+        }
+
+        .departamento-texto p {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        /* Centralizar todos os títulos */
+        h1, h2, h3 {
+            text-align: center;
+        }
+
+        /* Espaçamento leve abaixo dos títulos */
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        h2, h3 {
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        /* Imagens padronizadas e centralizadas */
+        .departamento-imagem-principal,
+        .departamento-imagem-secundaria img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .departamento-texto {
+                margin: 0 10px;
+            }
+        }
+    </style>
 </head>
+
 <body> 
     
     <header>
@@ -33,8 +77,8 @@
     <div class="departamento-imagem-secundaria">
         <h1>Departamento de Taiko - Kaminari Wadaiko</h1>
         
-        <img src="Imagens/taiko2.jpg" alt="Apresentação do grupo de Taiko" class="departamento-imagem-secundaria" height="350px" width="480px">
-        <img src="Imagens/kaminariwadaiko.png" alt="Logo do Kaminari Wadaiko" class="departamento-imagem-secundaria" height="240px" width="400px">
+        <img src="Imagens/taiko2.jpg" alt="Apresentação do grupo de Taiko" class="departamento-imagem-principal">
+        <img src="Imagens/kaminariwadaiko.png" alt="Logo do Kaminari Wadaiko" class="departamento-imagem-principal">
         
         <div class="departamento-texto">
             <h2>A Batida que Move Corações</h2>
@@ -54,7 +98,9 @@
             </p>
             
             <br>
-            <img src="Imagens/taiko1.jpg" alt="Apresentação final taiko" class="departamento-imagem-secundaria" height="320px" width="400px">
+
+            <!-- Última imagem ajustada para seguir o mesmo estilo -->
+            <img src="Imagens/taiko1.jpg" alt="Apresentação final taiko" class="departamento-imagem-principal">
 
             <h2>Nosso Legado de Apresentações</h2>
             <p>
@@ -65,7 +111,11 @@
             
             <div class="chamada-acao">
                 <h3>Interessado no Retorno em 2026?</h3>
-                <p>A melhor forma de conhecer o Taiko é sentindo a vibração dos tambores. Se você tem interesse em participar das futuras turmas de iniciantes ou quer ser avisado sobre o retorno do grupo, entre em contato! Deixaremos seu nome em nossa lista de interesse.</p>
+                <p>
+                    A melhor forma de conhecer o Taiko é sentindo a vibração dos tambores. 
+                    Se você tem interesse em participar das futuras turmas de iniciantes ou quer ser avisado sobre o retorno do grupo, entre em contato! 
+                    Deixaremos seu nome em nossa lista de interesse.
+                </p>
                 <a href="index.html#contato" class="botao">Tenho Interesse!</a>
             </div>
         </div> 
